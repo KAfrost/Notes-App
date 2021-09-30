@@ -1,7 +1,9 @@
-const fs = require("fs"); 
 
-// create the new file and create it with some starting text
-fs.writeFileSync('notes.txt', 'This file was created by Node.js');
+// const getNotes = require("./notes.js")
+// const validator = require("validator");
+const chalk = require("chalk");
 
-// add new information to the file that you've created above. 
-fs.appendFileSync('notes.txt', "\nLook a tthe thing I made.");
+// console.log(getNotes());
+// console.log(validator.isEmail("test@test.com"));
+console.log(chalk.bgGreen.bold("Success!"));
+
